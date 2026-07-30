@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Web Page tukar</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #4f46e5, #0ea5e9);
+      color: black;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+    }
+
+    header h2 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: .3s;
+    }
+
+    nav a:hover {
+      color: #ffd54f;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.12);
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 700px;
+      box-shadow: 0 15px 40px rgba(0,0,0,.2);
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      opacity: .95;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 10px;
+      background: white;
+      color: #4f46e5;
+      font-size: 16px;
+      cursor: pointer;
+      transition: .3s;
+      font-weight: bold;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+      background: #ffe082;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,.08);
+    }
+
+    @media(max-width:768px){
+      header{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      h1{
+        font-size:36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>1ST PROJECT AAAAA</h2>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="https://liqkha.github.io/Testing-Index.html/info">About</a>
+    <a href="info">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="card">
+    <h1>Selamat Datang 👋</h1>
+
+    <p>
+      This is a simple responsive website built using only one HTML file.
+      Everything—including HTML, CSS, and JavaScript—is contained in this
+      single document.
+    </p>
+
+    <button onclick="showMessage()">
+      Click Me
+    </button>
+  </div>
+</section>
+
+<footer>
+  © 2026 My Website. All rights reserved.
+</footer>
+
+<script>
+function showMessage() {
+  alert("Hello! Thanks for visiting this simple website.");
+}
+</script>
+
+</body>
+</html>
