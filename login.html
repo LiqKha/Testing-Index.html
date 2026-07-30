@@ -172,3 +172,27 @@ button:hover{
 </body>
 </html>
 
+<script>
+    function login(){
+
+    let username = document.getElementById("username").value;
+
+    let password = document.getElementById("password").value;
+
+    if(username === "admin" && password === "123456"){
+
+        alert("Login Berjaya!");
+
+        window.location.href = "index.html";
+
+    }else{
+
+        document.getElementById("message").innerHTML =
+        "❌ Username atau Password Salah";
+
+        document.getElementById("message").style.color = "red";
+
+    }
+
+}
+</script>
