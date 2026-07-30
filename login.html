@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h1>🔐 Login</h1>
+
+        <p class="subtitle">
+            Sila masukkan username dan password anda.
+        </p>
+
+        <div class="input-group">
+            <label>Username</label>
+            <input
+                type="text"
+                id="username"
+                placeholder="Masukkan username">
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Masukkan password">
+        </div>
+
+        <button onclick="login()">
+            Login
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
