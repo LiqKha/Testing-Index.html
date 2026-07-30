@@ -1,151 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ms">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple Web Page tukar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Saya</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
 
-    body {
-      background: linear-gradient(135deg, #4f46e5, #0ea5e9);
-      color: black;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+        body{
+            background:linear-gradient(135deg,#2563eb,#06b6d4);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:#333;
+        }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 10%;
-      background: rgba(255,255,255,0.08);
-      backdrop-filter: blur(10px);
-    }
+        .card{
+            background:white;
+            width:90%;
+            max-width:600px;
+            padding:40px;
+            border-radius:20px;
+            text-align:center;
+            box-shadow:0 15px 40px rgba(0,0,0,.25);
+        }
 
-    header h2 {
-      font-size: 24px;
-    }
+        .profile{
+            width:120px;
+            height:120px;
+            background:#2563eb;
+            border-radius:50%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin:0 auto 20px;
+            font-size:50px;
+            color:white;
+        }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      transition: .3s;
-    }
+        h1{
+            color:#2563eb;
+            margin-bottom:10px;
+        }
 
-    nav a:hover {
-      color: #ffd54f;
-    }
+        .subtitle{
+            color:#666;
+            margin-bottom:30px;
+        }
 
-    .hero {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 40px;
-    }
+        .info{
+            text-align:left;
+            margin-top:20px;
+        }
 
-    .card {
-      background: rgba(255,255,255,0.12);
-      padding: 40px;
-      border-radius: 20px;
-      max-width: 700px;
-      box-shadow: 0 15px 40px rgba(0,0,0,.2);
-    }
+        .info p{
+            font-size:18px;
+            padding:15px;
+            border-bottom:1px solid #ddd;
+        }
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
+        button{
+            margin-top:30px;
+            background:#2563eb;
+            color:white;
+            border:none;
+            padding:14px 28px;
+            border-radius:10px;
+            font-size:16px;
+            cursor:pointer;
+            transition:.3s;
+        }
 
-    p {
-      font-size: 18px;
-      line-height: 1.7;
-      opacity: .95;
-    }
+        button:hover{
+            background:#1d4ed8;
+            transform:translateY(-3px);
+        }
 
-    button {
-      margin-top: 30px;
-      padding: 14px 28px;
-      border: none;
-      border-radius: 10px;
-      background: white;
-      color: #4f46e5;
-      font-size: 16px;
-      cursor: pointer;
-      transition: .3s;
-      font-weight: bold;
-    }
+        @media(max-width:768px){
 
-    button:hover {
-      transform: translateY(-3px);
-      background: #ffe082;
-    }
+            .card{
+                padding:30px;
+            }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: rgba(255,255,255,.08);
-    }
+            .info p{
+                font-size:16px;
+            }
 
-    @media(max-width:768px){
-      header{
-        flex-direction:column;
-        gap:15px;
-      }
+        }
 
-      h1{
-        font-size:36px;
-      }
-    }
-  </style>
+    </style>
+
 </head>
+
 <body>
 
-<header>
-  <h2>1ST PROJECT AAAAA</h2>
+<div class="card">
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="https://liqkha.github.io/Testing-Index.html/info">About</a>
-    <a href="info">Services</a>
-    <a href="/info">Contact</a>
-  </nav>
-</header>
+    <div class="profile">
+        👤
+    </div>
 
-<section class="hero">
-  <div class="card">
-    <h1>Selamat Datang 👋</h1>
+    <h1>Khaliq Kamarul</h1>
 
-    <p>
-      This is a simple responsive website built using only one HTML file.
-      Everything—including HTML, CSS, and JavaScript—is contained in this
-      single document.
+    <p class="subtitle">
+        Beginner Web Developer
     </p>
 
-    <button onclick="showMessage()">
-      Click Me
-    </button>
-  </div>
-</section>
+    <div class="info">
 
-<footer>
-  © 2026 My Website. All rights reserved.
-</footer>
+        <p><strong>📛 Name:</strong> Khaliq Kamarul</p>
+
+        <p><strong>📞 Contact:</strong> +60 12-345 6789</p>
+
+        <p><strong>📧 Email:</strong> khaliq@example.com</p>
+
+    </div>
+
+    <button onclick="showMessage()">
+        Contact Me
+    </button>
+
+</div>
 
 <script>
-function showMessage() {
-  alert("Hello! Thanks for visiting this simple website.");
+
+function showMessage(){
+
+    alert("Terima kasih kerana melawat portfolio saya!");
+
 }
+
 </script>
 
 </body>
